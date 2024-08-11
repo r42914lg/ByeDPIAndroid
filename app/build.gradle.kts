@@ -81,7 +81,7 @@ abstract class BuildTun2Socks : DefaultTask() {
         }
         project.exec {
             workingDir = tun2socksDir
-            commandLine("gomobile", "bind", "-o", tun2socksOutput, "-trimpath", "./engine")
+            commandLine("gomobile", "bind", "-androidapi", 19, "-o", tun2socksOutput, "-trimpath", "./engine")
         }
     }
 }
